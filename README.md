@@ -1,0 +1,1 @@
+Ksonnet cli docker image.
