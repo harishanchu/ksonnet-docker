@@ -17,4 +17,5 @@ RUN set -e; \
     && echo "$KSONNET_SHA256  /opt/ksonnet.tgz" | sha256sum -c - \
     && tar -C /opt/ksonnet --extract --file /opt/ksonnet.tgz --strip-components=1 \
     && chmod +x /opt/ksonnet/ks \
+    && ln -s /opt/ksonnet/ks /usr/bin/ks \
     && rm /opt/ksonnet.tgz
