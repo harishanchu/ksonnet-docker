@@ -6,7 +6,7 @@ RUN apk add --update --no-cache ca-certificates \
     && apk add --update --no-cache wget
 
 ENV KSONNET_VERSION="0.10.2"
-ENV KSONNET_SHA256="2f15f6fbecf6f597cf0aa8b623c1e49d589b7d409b73004b19b356fbcb6f096f
+ENV KSONNET_SHA256="2f15f6fbecf6f597cf0aa8b623c1e49d589b7d409b73004b19b356fbcb6f096f"
 ENV KSONNET_URL="https://github.com/ksonnet/ksonnet/releases/download/v${KSONNET_VERSION}/ks_${KSONNET_VERSION}_linux_amd64.tar.gz"
 
 RUN mkdir -p /opt/ksonnet
